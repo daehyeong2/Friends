@@ -1,0 +1,125 @@
+@import "cssfile/friends.css";
+
+a{
+    text-decoration: none;
+}
+html,body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(36, 154, 148, 0.1);
+}
+body{
+    position: relative;
+}
+.introduction{
+    display:flex;
+    flex-direction: column;
+    width: 400px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.introduction-first__avatar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100px;
+    height:100px;
+    background-color:rgba(22, 250, 231, 0.4);
+    border-radius: 20px;
+    margin-right: 10px;
+    border: solid 1px rgba(0,0,0,0.1);
+}
+.introduction-first__avatar img{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    border: solid 1px rgba(0,0,0,0.1);
+}
+.introduction-first__name{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:200px;
+    height:100px;
+    background-color:rgba(211, 5, 249, 0.4);
+    border-radius: 20px;
+    border: solid 1px rgba(0,0,0,0.1);
+}
+.introduction-first__name span{
+    font-weight: 600;
+    font-size: 28px;
+}
+.introduction-first{
+    display:flex;
+}
+.introduction-second, .introduction-last{
+    margin-top: 10px;
+    display:flex;
+}
+.introduction-second__game{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:180px;
+    height:100px;
+    margin-right: 10px;
+    background-color:rgba(25, 239, 85, 0.4);
+    border-radius: 20px;
+    border: solid 1px rgba(0,0,0,0.1);
+}
+.introduction-second span{
+    font-weight: 550;
+    font-size: 18px;
+}
+.introduction-second__target{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:120px;
+    height:100px;
+    background-color:rgba(220, 232, 5, 0.4);
+    border-radius: 20px;
+    border: solid 1px rgba(0,0,0,0.1);
+}
+.introduction-last__coding{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:310px;
+    height:150px;
+    background-color:rgba(237, 144, 8, 0.4);
+    border-radius: 20px;
+    border: solid 1px rgba(0,0,0,0.1);
+}
+.introduction-last span{
+    text-align: center;
+    font-weight:600;
+    font-size: 20px;
+}
+.nav{
+    position: absolute;
+    top: 0;
+    margin-top: 30px;
+    border-radius: 15px;
+    display:flex;
+    padding: 0px 20px;
+    align-items: center;
+    height: 50px;
+    width: 800px;
+    background-color: rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.3);
+}
+.nav-link{
+    margin-right: 20px;
+    color: white;
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+}
+.nav-link:hover{
+    color: orange;
+}
