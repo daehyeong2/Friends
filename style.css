@@ -5,6 +5,7 @@ a{
 }
 html,body{
     display:flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0;
@@ -122,4 +123,35 @@ body{
 }
 .nav-link:hover{
     color: orange;
+}
+.notification{
+    position: absolute;
+    background-color: lightgray;
+    border-radius: 20px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 30px;
+    width: 950px;
+}
+.notification-title{
+    width: 100px;
+    height: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.4);
+    position: absolute;
+    bottom: 120px;
+    left: 30px;
+}
+.notification-title span{
+    font-weight: 600;
+}
+.notification i{
+    margin-right: 10px;
+    color:deeppink;
 }
