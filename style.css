@@ -145,6 +145,7 @@ body{
     align-items: center;
     bottom: 30px;
     width: 950px;
+    transition: transform 0.7s ease-in-out;
     animation: fadeIn 0.7s;
 }
 .notification-title{
@@ -166,4 +167,9 @@ body{
 .notification i{
     margin-right: 10px;
     color:deeppink;
+}
+.notification-remove{
+    position: absolute;
+    right: 20px;
+    opacity: 0.5;
 }
