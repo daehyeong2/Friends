@@ -15,7 +15,7 @@ function handelNightModeClick(){
         nightMode = false;
     }
     else{
-        document.body.style.backgroundColor = "rgba(0,0,0,0.2";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.2)";
         nightMode = true;
     }
 }
