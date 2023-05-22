@@ -18,90 +18,86 @@ body{
     position: relative;
 }
 .introduction{
+    display: flex;
+    width: 900px;
+    height: 500px;
+}
+.introduction-left{
+    display:flex;
+    margin-left: 50px;
+    border-right: 1px solid rgba(0,0,0,0.2);
+    flex-direction: column;
+    align-items: center;
+    width: 230px;
+    padding-right: 50px;
+    height: 100%;
+}
+.introduction-left__avatar{
+    width: 150px;
+    height: 150px;
+}
+.introduction-left__avatar img{
+    border-radius: 20px;
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+}
+.introduction-left > span{
+    padding: 15px 0px;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(0,0,0,0.7);
+}
+.introduction-left__info{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 250px;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+.introduction-left__info span{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: rgba(0,0,0,0.6);
+}
+.introduction-right{
     display:flex;
     flex-direction: column;
-    width: 400px;
+    justify-content: center;
+    align-items: center;
+    width: 480px;
     height: 100%;
+    padding-left: 50px;
+}
+.introduction-right__box{
+    display:flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: 150px;
 }
-.introduction-first__avatar{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width:100px;
-    height:100px;
-    background-color:rgba(22, 250, 231, 0.4);
-    border-radius: 20px;
-    margin-right: 10px;
-    border: solid 1px rgba(0,0,0,0.1);
-}
-.introduction-first__avatar img{
-    width: 80px;
-    height: 80px;
-    border-radius: 10px;
-    border: solid 1px rgba(0,0,0,0.1);
-}
-.introduction-first__name{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width:200px;
-    height:100px;
-    background-color:rgba(211, 5, 249, 0.4);
-    border-radius: 20px;
-    border: solid 1px rgba(0,0,0,0.1);
-}
-.introduction-first__name span{
-    font-weight: 600;
-    font-size: 28px;
-}
-.introduction-first{
-    display:flex;
-}
-.introduction-second, .introduction-last{
-    margin-top: 10px;
-    display:flex;
-}
-.introduction-second__game{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width:180px;
-    height:100px;
-    margin-right: 10px;
-    background-color:rgba(25, 239, 85, 0.4);
-    border-radius: 20px;
-    border: solid 1px rgba(0,0,0,0.1);
-}
-.introduction-second span{
-    font-weight: 550;
-    font-size: 18px;
-}
-.introduction-second__target{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width:120px;
-    height:100px;
-    background-color:rgba(220, 232, 5, 0.4);
-    border-radius: 20px;
-    border: solid 1px rgba(0,0,0,0.1);
-}
-.introduction-last__coding{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    width:310px;
-    height:150px;
-    background-color:rgba(237, 144, 8, 0.4);
-    border-radius: 20px;
-    border: solid 1px rgba(0,0,0,0.1);
-}
-.introduction-last span{
+.introduction-right__box-title{
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 30px;
     text-align: center;
-    font-weight:600;
-    font-size: 20px;
+    font-weight: 600;
+    font-size: 22px;
+    background-color: lightyellow;
+}
+.introduction-right__box-value span{
+    background-color: rgba(0,0,0,0.1);
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid rgba(0,0,0,0.2);
+    margin-right: 10px;
 }
 .nav{
     position: absolute;
@@ -125,6 +121,15 @@ body{
 .nav-link:hover{
     color: orange;
 }
+.nav button{
+    position: absolute;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 50%;
+}
 @keyframes fadeIn{
     from{
         opacity: 0;
@@ -135,6 +140,7 @@ body{
         transform: none;
     }
 }
+
 .notification{
     position: absolute;
     background-color: lightgray;
