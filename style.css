@@ -60,7 +60,7 @@ body{
     background-color: rgba(0,0,0,0.2);
     border-radius: 10px;
     border: 1px solid rgba(0,0,0,0.2);
-    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, background-color .3s ease-in-out;
 }
 .introduction-left__info span{
     font-size: 18px;
