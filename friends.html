@@ -48,7 +48,20 @@
             </div>
         </a>
         <script src="https://kit.fontawesome.com/18c154b14c.js" crossorigin="anonymous"></script>
-        <script src="app.js"></script>
+        <script type="text/javascript">
+            const btn = document.querySelector(".nav button");
+
+            function handelNightModeClick() {
+                if (document.body.style.backgroundColor === "rgba(36, 154, 148, 0.1)") {
+                    document.body.style.backgroundColor = "rgba(0,0,0,0.2)";
+                }
+                else {
+                    document.body.style.backgroundColor = "rgba(36, 154, 148, 0.1)";
+                }
+            }
+
+            btn.addEventListener("click", handelNightModeClick);
+        </script>
 </body>
 
 </html>

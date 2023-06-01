@@ -1,25 +1,14 @@
-const notification = document.querySelector(".notification");
 const btn = document.querySelector(".nav button");
 const info = document.querySelector(".introduction-left__info");
 const infoItems = document.querySelectorAll(".introduction-left__info span");
 const tmp = infoItems[2].innerText;
-let nightMode = false;
-
-function handelNotificationRemove(){
-    notification.style.transform = "translateY(200px)";
-    setTimeout(function(){
-        notification.parentNode.removeChild(notification);
-    }, 700)
-}
 
 function handelNightModeClick(){
-    if(nightMode){
-        document.body.style.backgroundColor = "rgba(36, 154, 148, 0.1)";
-        nightMode = false;
+    if(document.body.style.backgroundColor==="rgba(36, 154, 148, 0.1)"){
+        document.body.style.backgroundColor = "rgba(0,0,0,0.2)";
     }
     else{
-        document.body.style.backgroundColor = "rgba(0,0,0,0.2)";
-        nightMode = true;
+        document.body.style.backgroundColor = "rgba(36, 154, 148, 0.1)";
     }
 }
 
@@ -50,5 +39,3 @@ function handelInfoMouseLeave(){
 }
 
 btn.addEventListener("click", handelNightModeClick);
-
-notification.addEventListener("click", handelNotificationRemove);
