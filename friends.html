@@ -53,13 +53,7 @@
             let Nightmode = false;
 
             function handelNightModeClick() {
-                if (Nightmode) {
-                    document.body.style.backgroundColor = "rgba(36, 154, 148, 0.1)";
-                    Nightmode = false;
-                } else {
-                    document.body.style.backgroundColor = "rgba(0,0,0,0.2)";
-                    Nightmode = true;
-                }
+                document.body.classList.toggle("nightMode");
             }
 
             btn.addEventListener("click", handelNightModeClick);
