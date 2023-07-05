@@ -3,10 +3,6 @@ const info = document.querySelector(".introduction-left__info");
 const infoItems = document.querySelectorAll(".introduction-left__info span");
 const tmp = infoItems[2].innerText;
 
-function handelNightModeClick(){
-    document.body.classList.toggle("nightMode");
-}
-
 if (info) {
     info.addEventListener("mouseenter", handelInfoMouseEnter);
     info.addEventListener("mouseleave", handelInfoMouseLeave);
@@ -32,5 +28,3 @@ function handelInfoMouseLeave(){
     infoItems[2].style.transform = "none";
     infoItems[2].innerText = tmp;
 }
-
-btn.addEventListener("click", handelNightModeClick);
